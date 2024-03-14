@@ -11,4 +11,7 @@
 ; RAM[1] = RAM[0]
 ; RAM[3] = 1
 
-
+leaw %0, %A
+movw (%A), %D
+leaw %1000, %A
+movw %D, (%A)
